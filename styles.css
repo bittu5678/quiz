@@ -1,0 +1,105 @@
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 18px;
+}*/
+
+/*body {
+    font-family: Arial, sans-serif;
+    background-color: #805ba389;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 60;
+}*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: #805ba389; /* Fallback background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; /* Set margin to 0 to avoid overflow */
+  position: relative; /* Position relative to allow absolute positioning of content */
+  overflow: hidden; /* Prevents scrolling if video is larger */
+}
+
+.background-video {
+  position: absolute; /* Position the video absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the entire viewport */
+  z-index: -1; /* Send video behind other content */
+}
+
+.content {
+  position: relative; /* Position content relative to allow z-index to work */
+  z-index: 1; /* Bring content above the video */
+  color: white; /* Change text color for visibility */
+}
+.quiz-container {
+  background: #97cdfd; /* Fallback background color */
+  background-image: url("assest/pexels-photo.webp"); /* Add your background image here */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 4px 6px 7px rgba(55, 198, 16, 0.7);
+  height: 400px;
+  max-width: 700px;
+  width: 900%;
+}
+button {
+  background: #0c0e3cbc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 110 110 100px rgba(151, 19, 188, 0.1);
+  cursor: pointer;
+  border-radius: 500px;
+}
+button:hover {
+  background: #bd0d82;
+}
+#results {
+  margin-top: 20px;
+  font-size: 18px;
+}
